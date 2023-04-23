@@ -44,15 +44,26 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
-  use {'kdheepak/monochrome.nvim', config = function()
-    vim.cmd 'colorscheme monochrome'
-  end}
+  --use {'kdheepak/monochrome.nvim', config = function()
+  --  vim.cmd 'colorscheme monochrome'
+  --end}
   use 'nvim-tree/nvim-tree.lua'
   use {
   'nvim-lualine/lualine.nvim',
   requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
-  use 'tribela/vim-transparent'
+  -- use 'tribela/vim-transparent'
+  use({
+    'projekt0n/github-nvim-theme', tag = 'v0.0.7',
+    -- or                            branch = '0.0.x'
+    config = function()
+      require('github-theme').setup({
+        transparent = false;
+      })
+
+      vim.cmd('colorscheme github_dark_default')
+    end
+  })
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

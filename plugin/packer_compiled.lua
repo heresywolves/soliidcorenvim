@@ -74,16 +74,16 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["github-nvim-theme"] = {
+    config = { "\27LJ\2\n†\1\0\0\3\0\a\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\4\0009\0\5\0'\2\6\0B\0\2\1K\0\1\0$colorscheme github_dark_default\bcmd\bvim\1\0\1\16transparent\1\nsetup\17github-theme\frequire\0" },
+    loaded = true,
+    path = "/home/sifer/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
+    url = "https://github.com/projekt0n/github-nvim-theme"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/sifer/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
-  },
-  ["monochrome.nvim"] = {
-    config = { "\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme monochrome\bcmd\bvim\0" },
-    loaded = true,
-    path = "/home/sifer/.local/share/nvim/site/pack/packer/start/monochrome.nvim",
-    url = "https://github.com/kdheepak/monochrome.nvim"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -110,19 +110,14 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/sifer/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
-  },
-  ["vim-transparent"] = {
-    loaded = true,
-    path = "/home/sifer/.local/share/nvim/site/pack/packer/start/vim-transparent",
-    url = "https://github.com/tribela/vim-transparent"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: monochrome.nvim
-time([[Config for monochrome.nvim]], true)
-try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme monochrome\bcmd\bvim\0", "config", "monochrome.nvim")
-time([[Config for monochrome.nvim]], false)
+-- Config for: github-nvim-theme
+time([[Config for github-nvim-theme]], true)
+try_loadstring("\27LJ\2\n†\1\0\0\3\0\a\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\4\0009\0\5\0'\2\6\0B\0\2\1K\0\1\0$colorscheme github_dark_default\bcmd\bvim\1\0\1\16transparent\1\nsetup\17github-theme\frequire\0", "config", "github-nvim-theme")
+time([[Config for github-nvim-theme]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
