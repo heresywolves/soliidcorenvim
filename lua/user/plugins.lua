@@ -63,6 +63,7 @@ return packer.startup(function(use)
       vim.cmd('colorscheme github_dark_default')
     end
   })
+  use 'mattn/emmet-vim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
