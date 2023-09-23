@@ -52,7 +52,6 @@ return packer.startup(function(use)
   'nvim-lualine/lualine.nvim',
   requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
-  -- use 'tribela/vim-transparent'
   use({
     'projekt0n/github-nvim-theme', tag = 'v0.0.7',
     -- or                            branch = '0.0.x'
