@@ -65,6 +65,19 @@ return packer.startup(function(use)
   })
   use 'mattn/emmet-vim'
   use 'neovim/nvim-lspconfig'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
+  use({
+	"L3MON4D3/LuaSnip",
+	-- follow latest release.
+	tag = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+	-- install jsregexp (optional!:).
+	run = "make install_jsregexp"
+  })
+  use 'saadparwaiz1/cmp_luasnip'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

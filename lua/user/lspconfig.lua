@@ -49,6 +49,10 @@ lspconfig.eslint.setup({
   end,
 })
 
+lspconfig.tsserver.setup{
+    root_dir = lspconfig.util.root_pattern('.git') ,
+}
+
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
